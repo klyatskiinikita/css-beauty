@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgb(2,0,36) 0%, rgb(9,9,121) 60%, rgb(0,212,255) 100%);
+    flex-grow: 1;
+    position: relative;
+}
+
+.card-holder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.card {
+    margin-right: 20px;
+    padding: 20px 10px 200px;
+    flex-grow: 1;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    box-shadow: #0e123e 6px 4px 5px;
+}
+
+.card:hover {
+    transform: scale(1.2);
+    box-shadow: #0e123e 8px 6px 8px;
+}
+
+.card.-first {
+    background: linear-gradient(90deg, rgb(1,87,155) 0%, rgb(2,136,209) 50%, rgb(3,169,244) 100%);
+    font-family: 'Fira Code', monospace;
+    font-weight: 300;
+}
+
+.card.-second {
+    background: radial-gradient(circle, rgb(1,87,155) 0%, rgb(2,136,209) 50%, rgb(3,169,244) 100%);
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+}
+
+.card.-third {
+    background: linear-gradient(270deg, rgb(1,87,155) 0%, rgb(2,136,209) 50%, rgb(3,169,244) 100%);
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
+    src: url(fonts/JetBrainsMono-VariableFont_wght.ttf);
+    font-weight: 200;
+}
+
+h2 {
+    margin-bottom: 75px;
+    font-weight: 400;
+}
+
+.header-cards {
+    background: radial-gradient(circle, rgb(3,169,244) 0%, rgb(2,136,209) 40%, rgb(1,87,155) 75%); 
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 25px;
+    box-shadow: #0e123e 6px 4px 6px;
+}
+
+.footer-cards {
+    background: radial-gradient(circle, rgb(3,169,244) 0%, rgb(2,136,209) 40%, rgb(1,87,155) 75%); 
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: #0e123e 6px 4px 6px;
+}
+
+h1 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
